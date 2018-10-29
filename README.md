@@ -23,12 +23,16 @@ export function CountersComponent() {
   return (
     <>
       Foo: {counters.foo},
-      <button onClick={incrementFooCounter}>Increment</button>
+      <button onClick={incrementFooCounter}>
+        Increment foo
+      </button>
       
       <br/>
       
       Bar: {counters.bar},
-      <button onClick={incrementBarCounter}>Increment</button>
+      <button onClick={incrementBarCounter}>
+        Increment bar
+      </button>
     </>
   );
 }

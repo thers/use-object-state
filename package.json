@@ -1,14 +1,23 @@
 {
   "name": "use-object-state",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React hook for object state that merges state instead of replacing",
+  "keywords": [
+    "react",
+    "merge",
+    "object",
+    "state-management"
+  ],
   "main": "./lib/index.js",
+  "files": [
+    "./lib/**/*"
+  ],
   "repository": "https://github.com/thers/use-object-state.git",
   "author": "Alexander Kukhta <me@thers.io>",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "prepublish": "babel src --out-dir lib"
+    "prepublish": "babel src --out-dir lib && flow-copy-source src lib"
   },
   "dependencies": {
     "react": "^16.7.0-alpha.0"
@@ -17,6 +26,8 @@
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
     "@babel/plugin-transform-flow-strip-types": "^7.0.0",
-    "@babel/preset-env": "^7.1.0"
+    "@babel/preset-env": "^7.1.0",
+    "flow-bin": "^0.84.0",
+    "flow-copy-source": "^2.0.2"
   }
 }
