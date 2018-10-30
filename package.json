@@ -1,6 +1,6 @@
 {
   "name": "use-object-state",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React hook for object state that merges state instead of replacing",
   "keywords": [
     "react",
